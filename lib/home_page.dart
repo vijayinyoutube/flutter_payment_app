@@ -53,6 +53,7 @@ class _HomePageState extends State<HomePage> {
         status: PaymentItemStatus.final_price,
       )
     ],
+    width: double.infinity,
     type: GooglePayButtonType.pay,
     margin: const EdgeInsets.only(top: 15.0),
     onPaymentResult: (result) => debugPrint('Payment Result $result'),
