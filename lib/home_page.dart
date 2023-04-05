@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_payment_app/payment_config.dart';
+import 'payment_config.dart';
 import 'package:pay/pay.dart';
 
 class HomePage extends StatefulWidget {
