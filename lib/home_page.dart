@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
       )
     ],
     style: ApplePayButtonStyle.black,
-    width: 200,
+    width: double.infinity,
     height: 50,
     type: ApplePayButtonType.buy,
     margin: const EdgeInsets.only(top: 15.0),
@@ -64,7 +64,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Platform.isIOS ? applePayButton : googlePayButton),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: Center(child: Platform.isIOS ? applePayButton : googlePayButton),
+      ),
     );
   }
 }
