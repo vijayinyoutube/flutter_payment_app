@@ -39,9 +39,7 @@ class _HomePageState extends State<HomePage> {
     type: ApplePayButtonType.buy,
     margin: const EdgeInsets.only(top: 15.0),
     onPaymentResult: (result) => debugPrint('Payment Result $result'),
-    loadingIndicator: const Center(
-      child: CircularProgressIndicator(),
-    ),
+    loadingIndicator: const Center(child: CircularProgressIndicator()),
   );
 
   var googlePayButton = GooglePayButton(
@@ -57,9 +55,7 @@ class _HomePageState extends State<HomePage> {
     type: GooglePayButtonType.pay,
     margin: const EdgeInsets.only(top: 15.0),
     onPaymentResult: (result) => debugPrint('Payment Result $result'),
-    loadingIndicator: const Center(
-      child: CircularProgressIndicator(),
-    ),
+    loadingIndicator: const Center(child: CircularProgressIndicator()),
   );
 
   @override

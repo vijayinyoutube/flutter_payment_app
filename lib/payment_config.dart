@@ -32,8 +32,6 @@ const String defaultApplePay = '''{
   }
 }''';
 
-/// Sample configuration for Google Pay. Contains the same content as the file
-/// under `assets/default_payment_profile_google_pay.json`.
 const String defaultGooglePay = '''{
   "provider": "google_pay",
   "data": {
